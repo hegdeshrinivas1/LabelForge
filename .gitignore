@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.db
+*.sqlite3
+.pytest_cache/
+labelforge/backend/venv/
+labelforge/backend/.env
+
+# Node.js
+labelforge/frontend/node_modules/
+labelforge/frontend/dist/
+labelforge/frontend/.env
+*.local
+
+# OS & Misc
+.dist/
+.DS_Store
+Thumbs.db

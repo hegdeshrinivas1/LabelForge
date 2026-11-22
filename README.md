@@ -31,30 +31,33 @@ Designed to demonstrate modern software engineering craftsmanship, LabelForge sh
 
 ```mermaid
 flowchart TD
-    subgraph Client ["Frontend (React 18 + Vite)"]
-        UI[Hand-written CSS Design System]
-        AuthC[AuthContext + Axios JWT Interceptors]
-        Views[Admin Dashboard | Label Workbench | QA Queue]
+    subgraph Client ["Frontend: React 18 + Vite"]
+        UI["Hand-written CSS Design System"]
+        AuthC["AuthContext + Axios Interceptors"]
+        Views["Dashboard • Workbench • QA Queue"]
     end
 
-    subgraph API ["Backend API (FastAPI + Pydantic v2)"]
-        Router[API Routers /api/v1]
-        Security[OAuth2 Password Bearer + bcrypt]
-        IngestEngine[Batch Ingest & Deduplication Engine]
-        Assigner[Round-Robin Task Distributor]
-        StatsEngine[Raw SQL Analytics Service]
+    subgraph API ["Backend API: FastAPI + Pydantic v2"]
+        Router["API Routers /api/v1"]
+        Security["OAuth2 Bearer + bcrypt"]
+        IngestEngine["Batch Ingest & Deduplication"]
+        Assigner["Round-Robin Task Assigner"]
+        StatsEngine["Raw SQL Analytics Engine"]
     end
 
-    subgraph Storage ["Database Layer (SQLAlchemy 2.0)"]
-        DB[(PostgreSQL / SQLite)]
-        Tables[users | projects | labels | data_items | tasks | annotations | reviews]
+    subgraph Storage ["Database: SQLAlchemy 2.0"]
+        DB[("PostgreSQL / SQLite")]
     end
 
-    UI --> AuthC --> Router
+    UI --> AuthC
+    AuthC --> Router
     Router --> Security
-    Router --> IngestEngine --> Storage
-    Router --> Assigner --> Storage
-    Router --> StatsEngine --> Storage
+    Router --> IngestEngine
+    Router --> Assigner
+    Router --> StatsEngine
+    IngestEngine --> DB
+    Assigner --> DB
+    StatsEngine --> DB
 ```
 
 ### Task Lifecycle State Machine

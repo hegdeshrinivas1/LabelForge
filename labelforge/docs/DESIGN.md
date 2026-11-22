@@ -14,7 +14,7 @@ flowchart TD
         RC["React Router v6"]
         AC["AuthContext (JWT in Memory + LocalStorage)"]
         AX["Axios Client (with Auth & 401 Interceptors)"]
-        CSS["Handwritten Modular CSS Design System"]
+        CSS["Custom Modular CSS Design System"]
         SPA --> RC
         SPA --> AC
         SPA --> AX

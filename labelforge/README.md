@@ -27,7 +27,7 @@
 | **Frontend** | React 18, Vite | Lightning-fast HMR and optimized production bundle |
 | **Routing** | React Router v6 | Declarative client-side routing with role-based `ProtectedRoute` guards |
 | **HTTP Client** | Axios | Interceptors for automatic Bearer JWT attachment and global 401 redirects |
-| **Styling** | Handwritten CSS (Variables) | Demonstrates pure CSS mastery (Flexbox, Grid, design tokens, responsive queries; no Tailwind/UI kits) |
+| **Styling** | Pure CSS3 (Variables, Flexbox, Grid) | Custom design system with zero external UI kits (no Tailwind/Bootstrap). |
 | **Visualizations** | Recharts | Class distribution bar charts and 14-day throughput trend line charts |
 | **Backend** | FastAPI (Python 3.11+) | Asynchronous, auto-documenting OpenAPI REST framework |
 | **Validation** | Pydantic v2 | Strict schema validation, type safety, and input sanitization |

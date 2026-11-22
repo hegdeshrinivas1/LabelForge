@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [v1.0.0] - Target
 ### Added
-- Complete React (Vite) Single Page Application with custom handwritten CSS design system.
+- Complete React (Vite) Single Page Application with custom pure CSS design system.
 - Administrative project management, label color picker, drag-and-drop CSV/JSON upload, and round-robin assign modal.
 - Annotator workbench with 1-9 numeric keyboard shortcuts, auto-advance, and reviewer feedback alert banners.
 - Reviewer quality assurance queue with approval and mandatory rejection comments.

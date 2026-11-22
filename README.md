@@ -19,7 +19,7 @@
 **LabelForge** is a production-grade, full-stack data annotation and dataset curation platform engineered from scratch for Machine Learning and Data Science teams. Inspired by industry standards like *Label Studio*, LabelForge bridges the gap between raw uncurated text and high-accuracy supervised training datasets.
 
 Designed to demonstrate modern software engineering craftsmanship, LabelForge showcases:
-- **No Heavy UI Kits**: 100% hand-written, modular CSS using CSS custom properties (variables), Flexbox, Grid, and a dual **Light / Obsidian Dark Theme**.
+- **No Heavy UI Kits**: Pure custom modular CSS using CSS custom properties (variables), Flexbox, Grid, and a dual **Light / Obsidian Dark Theme**.
 - **Dual ORM & Raw SQL Architecture**: Standard CRUD operations powered by **SQLAlchemy 2.0** ORM alongside **parameterized Raw SQL** for complex multi-table analytical aggregations.
 - **Enterprise Role-Based Access Control (RBAC)**: Strict permission boundaries separating **Admins**, **Annotators**, and **Reviewers** with self-review bias prevention.
 - **High-Throughput Ergonomics**: Single-key vanilla JS shortcuts (`1`–`9`, `Enter`), automatic queue advancement, and rejection feedback banners.
@@ -32,7 +32,7 @@ Designed to demonstrate modern software engineering craftsmanship, LabelForge sh
 ```mermaid
 flowchart TD
     subgraph Client ["Frontend: React 18 + Vite"]
-        UI["Hand-written CSS Design System"]
+        UI["Custom CSS Design System"]
         AuthC["AuthContext + Axios Interceptors"]
         Views["Dashboard • Workbench • QA Queue"]
     end
@@ -84,7 +84,7 @@ flowchart TD
 | :--- | :--- | :--- |
 | **Frontend SPA** | React 18, Vite, React Router v6 | Sub-second HMR, optimized tree-shaken production bundles, declarative routing. |
 | **State & Auth** | Context API, Axios Interceptors | JWT stored in-memory + localStorage with automated token injection and 401 handling. |
-| **Styling** | Hand-written CSS (CSS Variables) | Shows core CSS proficiency (Grid, Flexbox, responsive tokens, zero Tailwind/Bootstrap). |
+| **Styling** | Pure CSS3 (Variables, Flexbox, Grid) | Custom design system with zero external UI kits (no Tailwind/Bootstrap). |
 | **Visualizations**| Recharts | Class distribution bar charts and 14-day trailing throughput velocity line charts. |
 | **Backend REST** | FastAPI, Python 3.11+, Uvicorn | High-performance async runtime with automated OpenAPI / Swagger generation. |
 | **Validation** | Pydantic v2 | Strict request/response schemas, type coercion, and input sanitization. |
@@ -286,7 +286,7 @@ labelforge/
 │   │   ├── context/AuthContext  # Global authentication & user state
 │   │   ├── components/          # Navbar, Modal, Toast, LoadingSpinner
 │   │   ├── pages/               # Landing, Workbench, QA Queue, Dashboard
-│   │   └── styles/              # Handwritten CSS tokens & global styles
+│   │   └── styles/              # Custom CSS design tokens & global styles
 │   ├── index.html               # Semantic HTML5 shell with theme script
 │   ├── nginx.conf               # Production Nginx SPA reverse proxy
 │   └── Dockerfile               # Multi-stage frontend build container

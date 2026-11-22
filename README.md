@@ -1,4 +1,4 @@
-# LabelForge 🏷️
+# LabelForge
 ### Enterprise Full-Stack Collaborative Data Annotation Platform (Mini Label Studio)
 
 [![CI Pipeline](https://img.shields.io/badge/CI-GitHub_Actions_Passing-success.svg?logo=githubactions&logoColor=white)](https://github.com)

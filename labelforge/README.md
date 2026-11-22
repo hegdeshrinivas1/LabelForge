@@ -1,4 +1,4 @@
-# LabelForge 🏷️
+# LabelForge
 ### Collaborative Data Annotation Platform (Mini Label Studio)
 
 [![LabelForge CI](https://github.com/username/labelforge/actions/workflows/ci.yml/badge.svg)](https://github.com/username/labelforge/actions)
